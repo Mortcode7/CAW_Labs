@@ -1,0 +1,404 @@
+/* General Styles */
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  color: #000000;
+  background-image:url('C:\Users\SURFUCE\OneDrive\Bureau\CAW\masroofy-budget-tracker-2\src\assets\statistic_background1.jpg') ;
+  background-size: cover; /* Ensures the image covers the whole screen */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Makes the background fixed during scrolling */
+  background-position: center; /* Centers the image */
+}
+
+/* Visual Reports Page */
+.visual-reports {
+  background-color: white;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  color: #163e76; /* Adjust text color for contrast */
+  padding: 20px;
+  
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: #07407c;
+  padding: 15px;
+  color: #fff;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #a32219;
+}
+
+/* Home Page Styles */
+.home-page {
+  padding: 20px;
+}
+
+.summary {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.summary p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Add Transaction Form Styles */
+form {
+  margin-top: 50px; /* Push the form down from the top */
+  max-width: 500px; /* Restrict the width for better layout */
+  margin-left: auto; /* Center the form horizontally */
+  margin-right: auto; /* Center the form horizontally */
+  background: #fefefe; /* Light background for the form */
+  padding: 20px; /* Add padding inside the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+form input,
+form select {
+  display: block;
+  width: calc(100% - 20px); /* Adjust width to match form padding */
+  margin: 10px auto; /* Space inputs and center them */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Improve font size for readability */
+}
+
+/* Radio Button Group */
+form div {
+  margin: 10px 0;
+  text-align: left; /* Align labels to the left */
+}
+
+form label {
+  margin-right: 15px; /* Space between radio buttons */
+  font-size: 14px; /* Consistent font size */
+  color: #333; /* Neutral text color */
+}
+
+/* Submit Button */
+form button {
+  width: 100%; /* Button spans the full width */
+  padding: 10px;
+  background: #16579c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Larger font for better emphasis */
+}
+
+form button:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+/* Transaction List Styles */
+/* .transaction-list {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+} */
+
+.transaction-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.transaction-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.transaction-item-h {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+}
+
+/* Transaction Details */
+.transaction-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form input {
+  width: 100px;
+}
+
+.edit-form select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.edit-form button {
+  padding: 8px 12px;
+  background: #2f67a2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-form button:hover {
+  background: #0056b3;
+}
+
+.edit-form button[type="button"] {
+  background: #6c757d;
+}
+
+.edit-form button[type="button"]:hover {
+  background: #c21532;
+}
+
+/* Transaction Actions */
+.transaction-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.transaction-actions button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Delete Button */
+.delete-button {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background: #a71d2a;
+}
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.segment {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-labels {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.income-label {
+  color: rgb(46, 205, 144);
+  margin: 5px 0;
+}
+
+.expense-label {
+  color: rgb(255, 33, 85);
+  margin: 5px 0;
+}
+
+
+
+
+.income-expense-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.circle-chart {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: relative;
+  background: conic-gradient(rgb(40, 227, 155)50%, rgb(255, 33, 85)50%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-labels {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.chart-labels p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+
+
+
+/* Layout: Align Chart and Transactions Side-by-Side */
+.income-expense-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px 0;
+  color: #07407c;
+  
+}
+
+/* Chart Container */
+.chart-container {
+  text-align: center;
+ 
+}
+
+/* Highlight Text for Numbers */
+.highlight-text {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Transaction List Glow Effect */
+.transaction-item {
+  color: white;
+  background: #092139;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.transaction-item:hover {
+  box-shadow: 0px 4px 15px rgba(0, 150, 255, 0.5);
+}
+
+/* Popup Overlay Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  background: #16579c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background: #0056b3;
+}
+
+
+
+
+/* Year Selector */
+#year-selector {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f9;
+  cursor: pointer;
+}
